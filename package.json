@@ -14,8 +14,11 @@
     "lucide-react": "^0.290.0",
     "next": "^14.0.1",
     "react": "^18",
+    "react-animated-cursor": "^2.11.2",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "react-spinners": "^0.13.8",
+    "three-orbitcontrols": "^2.110.3"
   },
   "devDependencies": {
     "@react-three/drei": "^9.88.4",
@@ -23,6 +26,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.158.1",
     "autoprefixer": "^10",
     "eslint": "^8",
     "eslint-config-next": "13.5.6",

@@ -4,7 +4,7 @@ import HeroContent from "../sub/HeroContent";
 const Hero = () => {
   return (
     <div
-      className="relative flex flex-col  w-full bg-[#03001417] backdrop-blur-lg  h-[100%]"
+      className="relative flex flex-col  w-full bg-[#03001417] backdrop-blur-lg  h-screen"
       id="about-me"
     >
       <video

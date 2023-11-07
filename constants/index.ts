@@ -36,12 +36,6 @@ export const Skill_data = [
     height: 80,
   },
   {
-    skill_name: "React Native",
-    Image: "/ReactNative .svg",
-    width: 70,
-    height: 70,
-  },
-  {
     skill_name: "Redux",
     Image: "/redux.svg",
     width: 80,
@@ -71,30 +65,12 @@ export const Skill_data = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Mongo db",
-    Image: "/mongodb.svg",
-    width: 40,
-    height: 40,
-  },
-  {
-    skill_name: "PostgreSQL",
-    Image: "/postger.svg",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Prisma",
-    Image: "/prisma.webp",
-    width: 70,
-    height: 70,
-  },
 ];
 
 export const Socials = [
   {
     name: "Github",
-    src: "/gitwhite.svg",
+    src: "/github.svg",
   },
   {
     name: "LinkedIn",
