@@ -19,7 +19,7 @@ const staggerVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.5,
+      duration: 0.3,
     },
   },
 };
@@ -37,28 +37,28 @@ const HeroContent = () => {
 
   return (
     <motion.div
-      className="flex flex-row items-center justify-center px-20 w-full z-[20] bg-[#03001417]/60 backdrop-blur-lg h-screen mb-40 ml-5 py-20"
+      className="flex flex-row items-center justify-center px-20 w-[100vw] z-[20] bg-[#03001417]/60 backdrop-blur-xl h-[100vh] ml-5"
       initial="hidden"
       animate={controls}
       variants={animationVariants}
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      <div className="h-[100vh] w-full flex flex-col gap-5 justify-center m text-start">
         <motion.div
-          className="Welcome-box rounded-lg py-[8px] px-[7px] opacity-[0.9]"
+          className="Welcome-box rounded-lg  px-[7px] opacity-[0.9]"
           variants={staggerVariants}
         ></motion.div>
 
         <motion.div
-          className="flex flex-col gap-6 mt-5 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-5 text-5xl font-bold text-white max-w-[600px] w-screen h-[screen]"
           variants={staggerVariants}
         >
           <span>
-            Hi, I&apos;m Mack. <br /> <br />I
-            <span className="text-transparent bg-clip-text bg-gradient-to-r  from-purple-400 to-purple-500">
+            Hi, I&apos;m Mack. <br />I build
+            <span className="text-transparent bg-clip-text bg-gradient-to-r  from-purple-400 to-white/50">
               {" "}
-              design & develop &nbsp;
+              modern solutions
             </span>
-            modern solutions.
+            &nbsp;on the web
           </span>
         </motion.div>
 
@@ -66,9 +66,9 @@ const HeroContent = () => {
           className="text-lg text-white my-5 max-w-[600px]"
           variants={staggerVariants}
         >
-          A Freelance Web Developer and Designer. I build websites, mobile apps
-          and software from scratch. Explore my portfolio to discover my
-          projects and expertise.
+          I build modern websites, web apps, mobile apps and software from
+          scratch. My products are faster, lighter and SEO optimized. Explore my
+          portfolio to discover my expertise.
         </motion.p>
         <div className="flex w-full gap-8">
           <motion.a

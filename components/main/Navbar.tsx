@@ -16,7 +16,7 @@ import { motion } from "framer-motion"; // Import motion from framer-motion
 const Navbar = () => {
   return (
     <motion.div
-    className="w-16 h-screen fixed left-0 top-0 shadow-md shadow-[white]/50 bg-[#03001417] backdrop-blur-md z-50 px-2 md:px-4 py-5"
+    className="w-16 h-screen fixed left-0 top-0  bg-[#03001417] backdrop-blur-md z-50 px-2 md:px-4 py-5"
     initial={{ x: -100, opacity: 0 }} // Initial animation values
     animate={{ x: 0, opacity: 1 }} // Animation values when component mounts
     exit={{ x: -100, opacity: 0 }} // Animation values when component unmounts

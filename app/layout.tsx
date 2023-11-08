@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
-import CustomCursor from "@/components/sub/CustomCursor";
 import AnimatedCursor from "react-animated-cursor";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,14 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bottom-0 fixed">
       
       <body
-        className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
+        className={`${inter.className} bg-[#030014] overflow-y-hidden overflow-x-hidden`}
       >
         <Navbar />
         {children}
-        {/* <CustomCursor /> */}
         <AnimatedCursor
       innerSize={20}
       outerSize={8}
@@ -50,7 +48,6 @@ export default function RootLayout({
         '.link'
       ]}
     />
-        <Footer />
       </body>
     </html>
   );
