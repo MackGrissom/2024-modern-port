@@ -2,6 +2,11 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion, Variants } from "framer-motion";
 import Image from "next/image";
+import FloatingShape from "../three/FloatingShape";
+import Shape from "../three/FloatingShape";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { Physics } from "@react-three/cannon";
 
 const animationVariants: Variants = {
   hidden: { opacity: 0, x: -100 },
@@ -92,13 +97,24 @@ const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
         variants={staggerVariants}
       >
-        <Image
+        {/* <Image
           src="/mainIconsdark.svg"
           alt="work icons"
           height={650}
           width={650}
           className=""
-        />
+        /> */}
+
+        {/* react three fiber */}
+        {/* <Canvas>
+        <OrbitControls />
+        <ambientLight intensity={0.5} />
+        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+        <Physics>
+          <FloatingShape />
+        </Physics>
+      </Canvas> */}
+    {/* end react three fiber */}
       </motion.div>
     </motion.div>
   );

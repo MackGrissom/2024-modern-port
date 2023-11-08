@@ -1,10 +1,10 @@
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
 import AnimatedCursor from "react-animated-cursor";
+import { AnimatePresence } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="bottom-0 fixed">
-      
       <body
         className={`${inter.className} bg-[#030014] overflow-y-hidden overflow-x-hidden`}
       >
@@ -31,8 +30,8 @@ export default function RootLayout({
       innerSize={20}
       outerSize={8}
       color='	106, 13, 173'
-      outerAlpha={0.9}
-      innerScale={1.0}
+      outerAlpha={0.3}
+      innerScale={0.3}
       outerScale={5}
       clickables={[
         'a',
