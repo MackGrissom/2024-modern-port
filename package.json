@@ -21,7 +21,8 @@
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "react-spinners": "^0.13.8",
-    "three-orbitcontrols": "^2.110.3"
+    "three-orbitcontrols": "^2.110.3",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@react-three/drei": "^9.88.11",

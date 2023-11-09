@@ -692,6 +692,9 @@ video {
 .mt-\[10px\] {
   margin-top: 10px;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .flex {
   display: flex;
 }
@@ -872,6 +875,9 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+.overflow-hidden {
+  overflow: hidden;
 }
 .overflow-x-hidden {
   overflow-x: hidden;
