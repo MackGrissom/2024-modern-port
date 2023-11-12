@@ -72,3 +72,35 @@
   body {
   }
 }
+
+
+.typewriter-effect {
+  display: inline-block;
+  border-right: 2px solid white; /* The typewriter cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+.color-change {
+  animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+  0%, 100% {
+    color: #f06;
+  }
+  50% {
+    color: #80f;
+  }
+}

@@ -16,11 +16,13 @@
     "@react-three/rapier": "^1.1.2",
     "lucide-react": "^0.290.0",
     "next": "^14.0.1",
+    "node": "^21.1.0",
     "react": "^18",
     "react-animated-cursor": "^2.11.2",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "react-spinners": "^0.13.8",
+    "react-typist": "^2.0.5",
     "three-orbitcontrols": "^2.110.3",
     "typewriter-effect": "^2.21.0"
   },

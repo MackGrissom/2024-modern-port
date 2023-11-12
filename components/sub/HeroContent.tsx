@@ -2,11 +2,6 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion, Variants } from "framer-motion";
 import Image from "next/image";
-import FloatingShape from "../three/FloatingShape";
-import Shape from "../three/FloatingShape";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { Physics } from "@react-three/cannon";
 
 const animationVariants: Variants = {
   hidden: { opacity: 0, x: -100 },
@@ -42,46 +37,48 @@ const HeroContent = () => {
 
   return (
     <motion.div
-      className="flex flex-row items-center justify-center px-20 w-[100vw] z-[20] bg-[#03001417]/60 backdrop-blur-xl h-[100vh] ml-5"
+      className="flex flex-col lg:flex-row items-center justify-center px-14 sm:px-6 md:px-10 lg:px-20 w-full z-20 bg-[#03001417]/60 backdrop-blur-xl h-screen"
       initial="hidden"
       animate={controls}
       variants={animationVariants}
     >
-      <div className="h-[100vh] w-full flex flex-col gap-5 justify-center m text-start">
+      <div className="h-full w-full flex flex-col gap-5 justify-center text-start px-5 sm:px-10">
         <motion.div
-          className="Welcome-box rounded-lg  px-[7px] opacity-[0.9]"
+          className="Welcome-box rounded-lg px-7 opacity-90"
           variants={staggerVariants}
-        ></motion.div>
+        >
+          {/* ... */}
+        </motion.div>
 
         <motion.div
-          className="flex flex-col gap-6 mt-5 text-5xl font-bold text-white max-w-[600px] w-screen h-[screen]"
+          className="flex flex-col gap-6 mt-5 text-3xl sm:text-4xl md:text-5xl font-bold text-white max-w-[600px] w-full"
           variants={staggerVariants}
         >
           <span>
-            Hi, I&apos;m Mack. <br />I build
-            <span className="text-transparent bg-clip-text bg-gradient-to-r  from-purple-400 to-white/50">
-              {" "}
-              modern solutions
+            I&apos;m Mack. <br />I develop&nbsp;
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-white/50">
+              web solutions&nbsp;
             </span>
-            &nbsp;on the web
+            with cutting-edge technology{" "}
           </span>
         </motion.div>
 
         <motion.p
-          className="text-lg text-white my-5 max-w-[600px]"
+          className="text-base sm:text-lg text-white/60 my-5 max-w-[600px]"
           variants={staggerVariants}
         >
-          I build modern websites, web apps, mobile apps and software from
-          scratch. My products are faster, lighter and SEO optimized. Explore my
-          portfolio to discover my expertise.
+          As a freelance developer, I blend modern design with
+          cutting-edge technology to bring your ideas to life. Explore my work
+          and see how we can create digital magic together.
         </motion.p>
-        <div className="flex w-full gap-8">
+
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
           <motion.a
-            className="py-2 button-primary bg-gradient-to-r   from-purple-400 to-purple-600 text-center text-white cursor-pointer rounded-lg max-w-[200px] w-full"
+            className="py-2 button-primary bg-gradient-to-r from-purple-400 to-purple-600 text-center text-white cursor-pointer rounded-lg max-w-[200px] w-full"
             variants={staggerVariants}
             whileHover={hoverScaleVariants}
           >
-            Recieve a Quote
+            Receive a Quote
           </motion.a>
           <motion.a
             className="py-2 button-secondary text-center text-white cursor-pointer rounded-lg max-w-[200px] w-full bg-[#03001417] backdrop-blur-md"
@@ -93,29 +90,13 @@ const HeroContent = () => {
         </div>
       </div>
 
-      <motion.div
-        className="w-full h-full flex justify-center items-center"
-        variants={staggerVariants}
-      >
-        {/* <Image
-          src="/mainIconsdark.svg"
-          alt="work icons"
-          height={650}
-          width={650}
-          className=""
-        /> */}
-
-        {/* react three fiber */}
-        {/* <Canvas>
-        <OrbitControls />
-        <ambientLight intensity={0.5} />
-        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-        <Physics>
-          <FloatingShape />
-        </Physics>
-      </Canvas> */}
-    {/* end react three fiber */}
-      </motion.div>
+      <Image
+        src="/mainIconsdark.svg"
+        alt="work icons"
+        height={500}
+        width={500}
+        className=""
+      />
     </motion.div>
   );
 };

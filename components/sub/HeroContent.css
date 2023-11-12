@@ -1,0 +1,59 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    background: rgba(3, 0, 20, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .text-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title-box {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .greeting {
+    color: white;
+  }
+  
+  .role {
+    color: white;
+    font-size: 3rem;
+  }
+  
+  .dynamic-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite, color-change 2s infinite ease-in-out;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+  
+  @keyframes color-change {
+    0%, 100% { color: #ffffff; } /* Starting color */
+    50% { color: #ff8c00; } /* Mid animation color */
+  }
+  
+  .description {
+    color: white;
+    font-size: 
+  }
